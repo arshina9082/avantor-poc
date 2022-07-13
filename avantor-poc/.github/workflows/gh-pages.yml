@@ -35,4 +35,4 @@ jobs:
 
     - name: Deploy
       if: success()
-      run: aws s3 sync ../dist/avantor-poc avantor-ui-poc
+      run: aws s3 sync ./dist/avantor-poc s3://avantor-ui-poc
